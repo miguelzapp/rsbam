@@ -1,6 +1,6 @@
 # RsBaM Vertretungsplan Project
 
-Welcome to the RsBaM Vertretungsplan Project! This project was specifically designed for the Realschule Bad Münstereifel to provide an API to show the "Vertretungsplan" in an (web-)app.
+Welcome to the RsBaM Vertretungsplan Project! This project was specifically designed for the Realschule Bad Münstereifel to provide an API endpoint to upload, safe and show the "Vertretungsplan" in an (web-)app.
 
 ## What is a Vertretungsplan?
 
@@ -12,16 +12,17 @@ A "Vertretungsplan" is a German term that refers to a substitution plan or sched
 2. **Vertretungsplan Endpoints**: Simple endpoints that teachers can access to retrieve the latest Vertretungsplan updates and changes.
 3. **Authorization Checks**: To make sure only the school's staff can access the data, we have set up simple authorization checks that rely on authentication tokens.
 
-## Getting Started
-
-(Add here the steps on how to access the system, whether it's a web portal or an app. Instructions about logging in, navigating the interface, etc.)
-
 ## API Endpoints
 
-1. Retrieve Vertretungsplan Data: `GET /api/{version}/vertretungsplan`
-2. Upload Vertretungsplan Data (for admin use): `POST /api/{version}/administration/hochladen`
+`Content-Type: application/json`
 
-(Expand on the details of each endpoint, mentioning request methods, parameters, and expected responses.)
+### Requests
+| Name | Method | Description | Body |
+|----------|----------|----------|----------|
+| `/api/{version}/vertretungsplan` | GET | Retrieve Vertretungsplan Data | -
+| `/api/{version}/administration/hochladen` | POST | Upload JSON Vertretungsplan Data (for admin use) | JSON data
+
+
 
 ## Feedback & Support
 
