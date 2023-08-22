@@ -1,6 +1,6 @@
 # RsBaM Vertretungsplan Project for Schools
 
-Welcome to the RsBaM Vertretungsplan Project! This project was specifically designed for schools to provide an easier way for teachers to access and view the "Vertretungsplan".
+Welcome to the RsBaM Vertretungsplan Project! This project was specifically designed for the Realschule Bad Münstereifel to provide an API to show the "Vertretungsplan" in an (web-)app.
 
 ## What is a Vertretungsplan?
 
@@ -10,7 +10,7 @@ A "Vertretungsplan" is a German term that refers to a substitution plan or sched
 
 1. **PostgreSQL Database Connection**: All the data regarding the Vertretungsplan is stored in a PostgreSQL database, ensuring smooth data transactions and management using SQLAlchemy.
 2. **Vertretungsplan Endpoints**: Simple endpoints that teachers can access to retrieve the latest Vertretungsplan updates and changes.
-3. **Authorization Checks**: To make sure only the school's staff can access the data, we have set up authorization checks that rely on authentication tokens.
+3. **Authorization Checks**: To make sure only the school's staff can access the data, we have set up simple authorization checks that rely on authentication tokens.
 
 ## Getting Started
 
@@ -25,12 +25,4 @@ A "Vertretungsplan" is a German term that refers to a substitution plan or sched
 
 ## Feedback & Support
 
-If you're a teacher or a staff member at the school and have questions or feedback, please reach out to `your school's IT department contact info here`.
-
-## License
-
-(If there's any software license, you can mention or link to it here.)
-
----
-
-Thank you for using the RsBaM Vertretungsplan Project. Our main goal is to ensure that the school's teaching process remains efficient and any changes in the schedule are communicated seamlessly to all concerned parties.
+If you're a teacher or a staff member at the school and have questions or feedback, please reach out to `contact at miguelcz dot com`.
