@@ -14,14 +14,13 @@ A "Vertretungsplan" is a German term that refers to a substitution plan or sched
 
 ## API Endpoints
 
-`Content-Type: application/json`
+`Content-Type: application/json`  
+`Authorization: Bearer <token>`
 
-### Requests
-| Name | Method | Description | Body |
-|----------|----------|----------|----------|
-| `/api/{version}/vertretungsplan` | GET | Retrieve Vertretungsplan Data | -
-| `/api/{version}/administration/hochladen` | POST | Upload JSON Vertretungsplan Data (for admin use) | JSON data
-
+| Name                                      | Method | Description                                      | Req. Body | Res. Body
+|-------------------------------------------|--------|--------------------------------------------------|-----------|----------
+| `/api/{version}/vertretungsplan`          | GET    | Retrieve Vertretungsplan Data                    | -         | DateTime, latest JSON data
+| `/api/{version}/administration/hochladen` | POST   | Upload JSON Vertretungsplan Data (for admin use) | JSON data | -
 
 
 ## Feedback & Support
