@@ -9,7 +9,6 @@ Features:
 2. Endpoints to retrieve and upload "Vertretungsplan" data.
 3. Authorization checks using provided authentication tokens.
 
-
 Created on: 31.07.2023
 Last Modified: 22.08.2023
 Developed by: Miguel C. Zapp
@@ -35,7 +34,7 @@ import auth
 app = Flask(__name__)
 
 # Define API endpoint path
-API_ENDPOINT = "/api/"
+API_ENDPOINT = f"/api/{auth.version}"
 
 # Configure SQLAlchemy to connect to PostgreSQL database using provided authentication details
 app.config['SQLALCHEMY_DATABASE_URI'] = f'postgresql://{db_auth.username}:{db_auth.password}@{db_auth.host}/{db_auth.database}'
@@ -78,7 +77,7 @@ def homePage():
     return response
 
 # Route to upload new Vertretungsplan entry
-@Flask.route(app, rule=f"{API_ENDPOINT}/hochladen", methods=["POST"])
+@Flask.route(app, rule=f"{API_ENDPOINT}/administration/hochladen", methods=["POST"])
 def uploadRoute():
     d = request.get_json()
     response = createResponse()
