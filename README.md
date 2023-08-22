@@ -18,8 +18,8 @@ A "Vertretungsplan" is a German term that refers to a substitution plan or sched
 
 ## API Endpoints
 
-1. Retrieve Vertretungsplan Data: `Endpoint details here`
-2. Upload Vertretungsplan Data (for admin use): `Endpoint details here`
+1. Retrieve Vertretungsplan Data: `GET /api/{version}/vertretungsplan`
+2. Upload Vertretungsplan Data (for admin use): `POST /api/{version}/administration/hochladen`
 
 (Expand on the details of each endpoint, mentioning request methods, parameters, and expected responses.)
 
