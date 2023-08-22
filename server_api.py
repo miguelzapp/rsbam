@@ -9,11 +9,9 @@ Features:
 2. Endpoints to retrieve and upload "Vertretungsplan" data.
 3. Authorization checks using provided authentication tokens.
 
-Restrictions:
-Commercial use and distribution of this code is not permitted without explicit permission from the author.
 
 Created on: 31.07.2023
-Last Modified: 01.08.2023
+Last Modified: 22.08.2023
 Developed by: Miguel C. Zapp
 
 For issues or further enhancements, contact contact@miguelcz.com.
