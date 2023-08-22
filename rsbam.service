@@ -1,0 +1,16 @@
+[Unit]
+Description=RsBaM Vertreungsplan API-Server
+After=postgresql.service
+Requires=postgresql.service
+
+[Service]
+ExecStart=uwsgi --http 127.0.0.1:6000 --master -p 4 -w server:app --thunder-lock --enable-threads
+WorkingDirectory=/home/user/rsbam
+#StandardOutput=syslog not needed in newer versions of systemd
+User=user
+
+# Send a Ctrl-C signal to shutdown the server in a safe way
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target
