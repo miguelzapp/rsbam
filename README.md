@@ -1,6 +1,6 @@
 # RsBaM Vertretungsplan Project
 
-Welcome to the RsBaM Vertretungsplan Project! This project was specifically designed for the Realschule Bad Münstereifel to provide an API endpoint to upload, safe and show the "Vertretungsplan" in an (web-)app.
+This project was specifically designed for the Realschule Bad Münstereifel to provide an API endpoint to upload, save and show the "Vertretungsplan" in an (web-)app.
 
 ## What is a Vertretungsplan?
 
