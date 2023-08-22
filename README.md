@@ -14,8 +14,10 @@ A "Vertretungsplan" is a German term that refers to a substitution plan or sched
 
 ## API Endpoints
 
-`Content-Type: application/json`  
-`Authorization: Bearer <token>`
+```
+Content-Type: application/json
+Authorization: Bearer <token>
+```
 
 | Name                                      | Method | Description                                      | Req. Body | Res. Body
 |-------------------------------------------|--------|--------------------------------------------------|-----------|----------
@@ -28,15 +30,14 @@ Before running the server, configure `db_auth.py` and `auth.py`.
 
 To run the REST API server, the provided `rsbam.service` systemd service file is used. This service ensures the server starts after the PostgreSQL service.
 
-**Service Configuration:**
+#### Service Configuration:
 - **Description**: RsBaM Vertretungsplan API-Server
 - **ExecStart Command**: This uses `uwsgi` to run the server, bound to `127.0.0.1:6000`.
 - **Working Directory**: `/home/user/rsbam` 
 - **User**: `user`
 
-(chage `user`)
   
-To start the server:
+#### Start the server:
 
 1. Move the `rsbam.service` file to `/etc/systemd/system/`.
 2. Reload the systemd manager configuration:  
@@ -52,7 +53,7 @@ To start the server:
    ```
    sudo systemctl enable rsbam.service
    ```
-
+   
 ## Feedback & Support
 
 If you're a teacher or a staff member at the school and have questions or feedback, please reach out to `contact at miguelcz dot com`.
